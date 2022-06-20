@@ -73,12 +73,9 @@
                 <configuration>
                     <jvmTarget>1.8</jvmTarget>
                     <sourceDirs>
-                        <source>src/main/kotlin</source>
+                        <source>${project.basedir}/src/main/kotlin</source>
                     </sourceDirs>
                     <args>
-<!--                        <arg>-Werror</arg>-->
-                        <arg>-opt-in=kotlin.RequiresOptIn</arg>
-                        <arg>-Xinline-classes</arg>
                         <arg>-Xuse-k2</arg>
                     </args>
                 </configuration>
